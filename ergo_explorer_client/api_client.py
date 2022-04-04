@@ -22,9 +22,9 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from swagger_client.configuration import Configuration
-import swagger_client.models
-from swagger_client import rest
+from ergo_explorer_client.configuration import Configuration
+import ergo_explorer_client.models
+from ergo_explorer_client import rest
 
 
 class ApiClient(object):
@@ -257,7 +257,7 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(swagger_client.models, klass)
+                klass = getattr(ergo_explorer_client.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

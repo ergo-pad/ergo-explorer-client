@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tx_id_response import TxIdResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import ergo_explorer_client
+from ergo_explorer_client.models.tx_id_response import TxIdResponse  # noqa: E501
+from ergo_explorer_client.rest import ApiException
 
 
 class TestTxIdResponse(unittest.TestCase):

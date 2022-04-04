@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.asset_instance_info import AssetInstanceInfo  # noqa: E501
-from swagger_client.rest import ApiException
+import ergo_explorer_client
+from ergo_explorer_client.models.asset_instance_info import AssetInstanceInfo  # noqa: E501
+from ergo_explorer_client.rest import ApiException
 
 
 class TestAssetInstanceInfo(unittest.TestCase):
